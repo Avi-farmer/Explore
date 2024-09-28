@@ -24,24 +24,28 @@
                 background-size: cover;
                 height: 800px;
             }
-            .menu a:hover{
-                color: orangered;
+            .menu a{
+                color: white;
             }
+            .menu a:hover{
+                color:#ffc107;
+            }
+
         </style>
     </head>
     <body class="container-fluid">
         <div class="header d-flex bg-black text-white justify-content-between p-4 position-sticky top-0 z-2">
             <div>
-                <h5><i class="bi bi-houses-fill me-2 text-4"></i>EXPLORE</h5>
+                <h5 class="text-warning"><img src="./images/logo.png" width="60" height="60">EXPLORE</h5>
             </div>
             <div class="navbar navbar-expand-md navbar-dark">
                 <div class="container-fluid">
                     <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
                     <nav class="navbar-collapse collapse navbar-nav menu" id="menu">
-                        <a class="navbar-link text-white text-decoration-none p-2" href="#">Home</a>
-                        <a class="navbar-link text-white text-decoration-none p-2" href="#about">About</a>
-                        <a class="navbar-link text-white text-decoration-none p-2" href="#blog">Blog</a>
-                        <a class="navbar-link text-white text-decoration-none p-2" href="#contact">Contact</a>
+                        <a class="navbar-link text-decoration-none p-2" href="#">Home</a>
+                        <a class="navbar-link text-decoration-none p-2" href="#about">About</a>
+                        <a class="navbar-link text-decoration-none p-2" href="#blog">Blog</a>
+                        <a class="navbar-link text-decoration-none p-2" href="#contact">Contact</a>
                         <a href="#contact"><button class="btn btn-warning p-2">Contact us</button></a>
                     </nav>
                 </div>
@@ -76,7 +80,7 @@
         </div>
         <div class="container">
             <div class="row d-flex overflow-hidden">
-                <div class="col-sm text-center">
+                <div class="col-sm text-center my-4">
                     <img src="./images/taj.jpg" class="w-100 h-50">
                     <h5 class="text-center">Taj mahal</h5>
                     <h6 class="text-center">posted on sep 17</h6>
@@ -101,7 +105,7 @@
                         </div>
                     </div>                
                 </div>
-                <div class="col-sm text-center">
+                <div class="col-sm text-center my-2">
                     <img src="./images/kuthub.jpg" class="w-100 h-50">
                     <h5 class="text-center">Kuthub minar</h5>
                     <h6 class="text-center">posted on sep 17</h6>
@@ -125,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm text-center">
+                <div class="col-sm text-center my-4">
                     <img src="./images/billa.jpg" class="w-100 h-50">
                     <h5 class="text-center">Billa mandir</h5>
                     <h6 class="text-center">posted on sep 17</h6>
@@ -195,7 +199,7 @@
                                 <input type="text" name="text" placeholder="First Name" class="form-control mb-3">
                                 <input type="text" name="text" placeholder="Last Name" class="form-control mb-3">
                                 <input type="email" name="email" placeholder="Enter Email" class="form-control mb-3">
-                                <textarea class="form-control" placeholder="message" style="100px"></textarea>                         
+                                <textarea class="form-control" placeholder="message"></textarea>                         
                                 <button class="btn btn-warning my-3 btn-sm" >Submit</button>
                             </form>                       
                         </div>
